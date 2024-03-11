@@ -8,8 +8,3 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_executable(02 main.cpp)
 add_subdirectory(lib)
 target_link_libraries(02 dll_lib)
-include(GNUInstallDirs)
-install(TARGETS 02
-    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
-    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
-)

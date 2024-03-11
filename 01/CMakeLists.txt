@@ -13,8 +13,3 @@ add_executable(01 main.cpp)
 add_subdirectory(lib)
 target_link_libraries(01 stat_lib_greeter)
 
-include(GNUInstallDirs)
-install(TARGETS 01
-    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
-    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
-)
